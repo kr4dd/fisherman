@@ -1,3 +1,7 @@
+// src/main.rs
+pub mod operations;
+
 fn main() {
-    println!("Hello, world!");
+    println!("=== fisherman ===");
+    operations::run_os_specific_operations();
 }
