@@ -55,8 +55,12 @@ impl OSContext {
     }
 
     // Delegate methods to the current strategy
-    pub fn detect_vbox(&self) -> Result<Vec<String>, bool> {
-        self.strategy.detect_vbox()
+    pub fn detect_vbox(&self) {
+        self.strategy.detect_vbox();
+    }
+
+    pub fn detect_vmware(&self) {
+        self.strategy.detect_vmware();
     }
 
 }

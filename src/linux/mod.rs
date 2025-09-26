@@ -13,8 +13,12 @@ impl LinuxStrategy {
 
 impl OSStrategy for LinuxStrategy {
 
-    fn detect_vbox(&self) -> Result<Vec<String>, bool> {
+    fn detect_vbox(&self) {
         linux::detect_vbox_usage()
+    }
+
+    fn detect_vmware(&self) {
+        linux::detect_vmware_usage()
     }   
 
 }

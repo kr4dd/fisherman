@@ -13,8 +13,11 @@ impl MacOSStrategy {
 
 impl OSStrategy for MacOSStrategy {
 
-    fn detect_vbox(&self) -> Result<Vec<String>, bool> {
-        macos::detect_vbox_usage()
+    fn detect_vbox(&self) {
+        macos::detect_vbox_usage();
     }
 
+    fn detect_vmware(&self) {
+        macos::detect_vmware_usage();
+    }
 }

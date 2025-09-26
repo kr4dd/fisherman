@@ -1,3 +1,7 @@
-pub fn detect_vbox_usage() -> Result<Vec<String>, bool> {
-    return Ok(Vec::new());
+pub fn detect_vbox_usage() {
+    println!("vbox");
+}
+
+pub fn detect_vmware_usage() {
+    println!("vmware");
 } 
